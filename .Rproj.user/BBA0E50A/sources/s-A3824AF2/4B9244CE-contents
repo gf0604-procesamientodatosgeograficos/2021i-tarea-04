@@ -27,7 +27,7 @@ knitr::opts_chunk$set(echo = FALSE)
 ### Fecha de entrega y entregables
 La fecha y hora límite para la entrega de esta tarea es el **jueves 15 de julio de 2021 a las 07:00 a.m.**.
 
-Debe escribir un documento R Markdown y publicarlo como una **página web (HTML) en GitHub Pages** con los contenidos que se especifican seguidamente. Entregue su tarea a través de la plataforma Mediación Virtual, especificando la dirección a su página web.
+Debe escribir un documento R Markdown y publicarlo como una **página web (HTML) en GitHub Pages** con los contenidos que se especifican seguidamente. Entregue su tarea a través de la plataforma Mediación Virtual, especificando la dirección de su página web.
 
 ### Objetivos
 Al finalizar esta tarea, el estudiante será capaz de:
