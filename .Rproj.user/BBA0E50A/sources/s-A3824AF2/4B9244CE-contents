@@ -1,0 +1,60 @@
+---
+title: "GF0604 Procesamiento de datos geográficos 2021-I. Tarea 04"
+author: 
+- name: Manuel Vargas
+  url: https://github.com/mfvargas
+  affiliation: Universidad de Costa Rica
+  affiliation_url: https://www.ucr.ac.cr/
+- name: Christian Birkel
+  affiliation: Universidad de Costa Rica
+  affiliation_url: https://www.ucr.ac.cr/
+description: |
+  Curso GF0604 Procesamiento de datos geográficos. Escuela de Geografía, Universidad de Costa Rica. Primer ciclo lectivo 2021. Tarea 04.
+site: distill::distill_website
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+
+# Learn more about creating websites with Distill at:
+# https://rstudio.github.io/distill/website.html
+
+# Learn more about publishing to GitHub Pages at:
+# https://rstudio.github.io/distill/publish_website.html#github-pages
+
+```
+
+### Fecha de entrega y entregables
+La fecha y hora límite para la entrega de esta tarea es el **jueves 15 de julio de 2021 a las 07:00 a.m.**.
+
+Debe escribir un documento R Markdown y publicarlo como una **página web (HTML) en GitHub Pages** con los contenidos que se especifican seguidamente. Entregue su tarea a través de la plataforma Mediación Virtual, especificando la dirección a su página web.
+
+### Objetivos
+Al finalizar esta tarea, el estudiante será capaz de:
+
+1. Realizar operaciones con datos espaciales en R.
+2. Limpiar conjuntos de datos.
+2. Visualizar los resultados con mapas interactivos.
+3. Publicar los resultados como páginas web generadas a partir de documentos R Markdown, para así mejorar su visualización y reproducibilidad.
+
+### Datos
+Para desarrollar esta tarea, utilice los siguientes conjuntos de datos:
+
+- Registros de presencia de orquídeas (familia [*Orchidaceae*](https://es.wikipedia.org/wiki/Orchidaceae)) de Costa Rica, disponible en [https://raw.githubusercontent.com/gf0604-procesamientodatosgeograficos/2021i-datos/main/gbif/orchidaceae-cr-registros.csv](https://raw.githubusercontent.com/gf0604-procesamientodatosgeograficos/2021i-datos/main/gbif/orchidaceae-cr-registros.csv).  
+- Áreas silvestres protegidas (ASP) de Costa Rica, disponible en [https://raw.githubusercontent.com/gf0604-procesamientodatosgeograficos/2021i-datos/main/sinac/asp/asp-wgs84.geojson](https://raw.githubusercontent.com/gf0604-procesamientodatosgeograficos/2021i-datos/main/sinac/asp/asp-wgs84.geojson).
+
+### Desarrollo
+1. (15%) En el conjunto de datos de registros de presencia, elimine los registros con un valor mayor que 1000 (mil) en  el campo ```coordinateUncertaintyInMeters```.  **No elimine los registros con un valor vacío o NA en este campo (vamos a asumir que son aceptables).**  
+
+2. (15%) En el conjunto de datos de registros de presencia, elimine los registros con valor vacío o NA en el campo ```species```.
+
+3. (15%) En el conjunto de datos de ASP, elimine los registros con valor de "Area Marina de Manejo" o "Area marina protegida" en el campo ```descripcio``` (esto es para no incluir estas ASP en los análisis ni en el mapa y considerar solo las ASP terrestres).
+
+
+4. En un mapa Leaflet, muestre las siguientes capas y controles:  
+a. (5%) Al menos una capa base (OSM, Stamen, etc.).  
+b. (25%) Una capa que muestre, mediante colores, la cantidad de especies en cada ASP. Debe tener una ventana emergente que muestre el nombre de la ASP y la cantidad de especies.
+c. (15%) Una leyenda que muestre la relación entre colores y cantidad de especies.
+d. (10%) Un control que permita activar y desactivar las capas.
+
+Organice las capas de manera que puedan visualizarse de la mejor manera posible. Elija con cuidado los colores de las capas.

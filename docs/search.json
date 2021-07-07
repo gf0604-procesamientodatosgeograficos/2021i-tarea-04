@@ -1,0 +1,30 @@
+{
+  "articles": [
+    {
+      "path": "about.html",
+      "title": "About this site",
+      "description": "Some additional details about the website",
+      "author": [],
+      "contents": "\r\n\r\n\r\n\r\n",
+      "last_modified": "2021-07-07T11:27:15-06:00"
+    },
+    {
+      "path": "index.html",
+      "title": "GF0604 Procesamiento de datos geográficos 2021-I. Tarea 04",
+      "description": "Curso GF0604 Procesamiento de datos geográficos. Escuela de Geografía, Universidad de Costa Rica. Primer ciclo lectivo 2021. Tarea 04.\n",
+      "author": [
+        {
+          "name": "Manuel Vargas",
+          "url": "https://github.com/mfvargas"
+        },
+        {
+          "name": "Christian Birkel",
+          "url": {}
+        }
+      ],
+      "contents": "\r\n\r\nContents\r\nFecha de entrega y entregables\r\nObjetivos\r\nDatos\r\nDesarrollo\r\n\r\nFecha de entrega y entregables\r\nLa fecha y hora límite para la entrega de esta tarea es el jueves 15 de julio de 2021 a las 07:00 a.m..\r\nDebe escribir un documento R Markdown y publicarlo como una página web (HTML) en GitHub Pages con los contenidos que se especifican seguidamente. Entregue su tarea a través de la plataforma Mediación Virtual, especificando la dirección a su página web.\r\nObjetivos\r\nAl finalizar esta tarea, el estudiante será capaz de:\r\nRealizar operaciones con datos espaciales en R.\r\nLimpiar conjuntos de datos.\r\nVisualizar los resultados con mapas interactivos.\r\nPublicar los resultados como páginas web generadas a partir de documentos R Markdown, para así mejorar su visualización y reproducibilidad.\r\nDatos\r\nPara desarrollar esta tarea, utilice los siguientes conjuntos de datos:\r\nRegistros de presencia de orquídeas (familia Orchidaceae) de Costa Rica, disponible en https://raw.githubusercontent.com/gf0604-procesamientodatosgeograficos/2021i-datos/main/gbif/orchidaceae-cr-registros.csv.\r\nÁreas silvestres protegidas (ASP) de Costa Rica, disponible en https://raw.githubusercontent.com/gf0604-procesamientodatosgeograficos/2021i-datos/main/sinac/asp/asp-wgs84.geojson.\r\nDesarrollo\r\n(15%) En el conjunto de datos de registros de presencia, elimine los registros con un valor mayor que 1000 (mil) en el campo coordinateUncertaintyInMeters. No elimine los registros con un valor vacío o NA en este campo (vamos a asumir que son aceptables).\r\n(15%) En el conjunto de datos de registros de presencia, elimine los registros con valor vacío o NA en el campo species.\r\n(15%) En el conjunto de datos de ASP, elimine los registros con valor de “Area Marina de Manejo” o “Area marina protegida” en el campo descripcio (esto es para no incluir estas ASP en los análisis ni en el mapa y considerar solo las ASP terrestres).\r\nEn un mapa Leaflet, muestre las siguientes capas y controles:\r\n(5%) Al menos una capa base (OSM, Stamen, etc.).\r\n(25%) Una capa que muestre, mediante colores, la cantidad de especies en cada ASP. Debe tener una ventana emergente que muestre el nombre de la ASP y la cantidad de especies.\r\n(15%) Una leyenda que muestre la relación entre colores y cantidad de especies.\r\n(10%) Un control que permita activar y desactivar las capas.\r\nOrganice las capas de manera que puedan visualizarse de la mejor manera posible. Elija con cuidado los colores de las capas.\r\n\r\n\r\n\r\n",
+      "last_modified": "2021-07-07T13:04:11-06:00"
+    }
+  ],
+  "collections": []
+}

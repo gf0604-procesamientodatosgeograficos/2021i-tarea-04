@@ -1,0 +1,27 @@
+name: "gf0604-procesamientodatosgeograficos-2021i-tarea-04"
+title: "GF0604 Procesamiento de datos geograficos 2021-I. Tarea 04"
+description: |
+  Curso GF0604 Procesamiento de datos geográficos. Escuela de Geografía, Universidad de Costa Rica. Primer ciclo lectivo 2021. Tarea 04.
+output_dir: "docs"
+theme: theme.css
+navbar:
+  left:
+    - icon: fab fa-github
+      href: "https://github.com/gf0604-procesamientodatosgeograficos/2021i-tarea-04/"  
+    - icon: fab fa-youtube
+      href: "https://www.youtube.com/playlist?list=PL1gEgLSwAJeI-aLFsld3jP47B9REqhUes" 
+    - icon: fas fa-database
+      href: "https://github.com/gf0604-procesamientodatosgeograficos/2021i-datos"       
+  right:
+    - text: "GF0604 2021-I"
+      href: "https://gf0604-procesamientodatosgeograficos.github.io/2021i/"  
+    - text: "Escuela de Geografia"
+      href: "https://www.geografia.fcs.ucr.ac.cr/"            
+    - text: "Universidad de Costa Rica"
+      href: "https://www.ucr.ac.cr/"
+creative_commons: CC BY-SA
+repository_url: https://github.com/gf0604-procesamientodatosgeograficos/2021i-tarea-04/
+output:
+  distill::distill_article:
+    toc: true
+    toc_float: true
